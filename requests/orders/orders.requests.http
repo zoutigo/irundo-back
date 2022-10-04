@@ -1,0 +1,32 @@
+GET http://localhost:3000/orders HTTP/1.1
+
+###
+GET http://localhost:8100/api/shops/a3fcb9f9-6e8e-47da-89d8-0a2a12764a8e HTTP/1.1
+
+###
+POST http://localhost:3000/orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "La cave de biyem assi",
+    "price":25,
+    "phone":"+33650597839"
+  
+}
+
+###
+
+PATCH  http://localhost:3000/orders/227ebc65-463c-4d96-9c95-6ca92dc65114 HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+33650597839"
+   
+}
+###
+
+DELETE  http://localhost:3000/orders/7572e92e-b6e3-4da1-b414-8ca89b8c1019 HTTP/1.1
+Content-Type: application/json
+
+
+###
